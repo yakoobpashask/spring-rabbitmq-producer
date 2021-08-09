@@ -1,0 +1,546 @@
+2021-08-05 11:47:30.010  INFO 19144 --- [main] c.e.SpringRabbitMQProducerApplication    : Starting SpringRabbitMQProducerApplication on EVOKE-CVD-16 with PID 19144 (C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ\target\classes started by ypasha in C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ)
+2021-08-05 11:47:30.012  INFO 19144 --- [main] c.e.SpringRabbitMQProducerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 11:47:30.041  INFO 19144 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@632ceb35: startup date [Thu Aug 05 11:47:30 IST 2021]; root of context hierarchy
+2021-08-05 11:47:30.739  INFO 19144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$74d8894e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 11:47:30.903  INFO 19144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-05 11:47:30.911  INFO 19144 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 11:47:30.912  INFO 19144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 11:47:30.972  INFO 19144 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-05 11:47:30.973  INFO 19144 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 932 ms
+2021-08-05 11:47:31.078  INFO 19144 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 11:47:31.081  INFO 19144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 11:47:31.081  INFO 19144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 11:47:31.081  INFO 19144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 11:47:31.082  INFO 19144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 11:47:31.461  INFO 19144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/evoke-rabbitmq/producer],methods=[GET]}" onto public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 11:47:31.463  INFO 19144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-08-05 11:47:31.464  INFO 19144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-08-05 11:47:31.465  INFO 19144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-08-05 11:47:31.466  INFO 19144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 11:47:31.467  INFO 19144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 11:47:31.542  INFO 19144 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-05 11:47:31.603  INFO 19144 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@632ceb35: startup date [Thu Aug 05 11:47:30 IST 2021]; root of context hierarchy
+2021-08-05 11:47:31.636  INFO 19144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:47:31.636  INFO 19144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:47:31.661  INFO 19144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:47:31.778  INFO 19144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 11:47:31.788  INFO 19144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 11:47:31.790  INFO 19144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 11:47:31.801  INFO 19144 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 11:47:31.801  INFO 19144 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 11:47:31.801  INFO 19144 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-05 11:47:31.815  INFO 19144 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-05 11:47:31.834  INFO 19144 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-05 11:47:31.879  INFO 19144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-05 11:47:31.882  INFO 19144 --- [main] c.e.SpringRabbitMQProducerApplication    : Started SpringRabbitMQProducerApplication in 2.05 seconds (JVM running for 2.535)
+2021-08-05 11:47:48.548  INFO 19144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-05 11:47:48.548  INFO 19144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-05 11:47:48.559  INFO 19144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2021-08-05 11:49:24.626  INFO 19144 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 11:49:24.626  INFO 19144 --- [RMI TCP Connection(11)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@632ceb35: startup date [Thu Aug 05 11:47:30 IST 2021]; root of context hierarchy
+2021-08-05 11:49:24.627  INFO 19144 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 11:49:24.628  INFO 19144 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 11:49:24.629  INFO 19144 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 11:49:24.629  INFO 19144 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 11:50:10.116  INFO 20500 --- [main] c.e.SpringRabbitMQProducerApplication    : Starting SpringRabbitMQProducerApplication on EVOKE-CVD-16 with PID 20500 (C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ\target\classes started by ypasha in C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ)
+2021-08-05 11:50:10.118  INFO 20500 --- [main] c.e.SpringRabbitMQProducerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 11:50:10.153  INFO 20500 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 11:50:10 IST 2021]; root of context hierarchy
+2021-08-05 11:50:10.867  INFO 20500 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$5bcd93f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 11:50:11.038  INFO 20500 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-05 11:50:11.046  INFO 20500 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 11:50:11.047  INFO 20500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 11:50:11.106  INFO 20500 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-05 11:50:11.107  INFO 20500 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 959 ms
+2021-08-05 11:50:11.218  INFO 20500 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 11:50:11.221  INFO 20500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 11:50:11.221  INFO 20500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 11:50:11.221  INFO 20500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 11:50:11.221  INFO 20500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 11:50:11.587  INFO 20500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/evoke-rabbitmq/producer],methods=[GET]}" onto public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 11:50:11.590  INFO 20500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-08-05 11:50:11.591  INFO 20500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-08-05 11:50:11.592  INFO 20500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-08-05 11:50:11.593  INFO 20500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 11:50:11.593  INFO 20500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 11:50:11.663  INFO 20500 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-05 11:50:11.716  INFO 20500 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 11:50:10 IST 2021]; root of context hierarchy
+2021-08-05 11:50:11.750  INFO 20500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:50:11.750  INFO 20500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:50:11.774  INFO 20500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:50:11.894  INFO 20500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 11:50:11.899  INFO 20500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 11:50:11.901  INFO 20500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 11:50:11.912  INFO 20500 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 11:50:11.913  INFO 20500 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 11:50:11.913  INFO 20500 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-05 11:50:11.925  INFO 20500 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-05 11:50:11.944  INFO 20500 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-05 11:50:12.057  INFO 20500 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-05 11:50:12.061  INFO 20500 --- [main] c.e.SpringRabbitMQProducerApplication    : Started SpringRabbitMQProducerApplication in 2.118 seconds (JVM running for 2.631)
+2021-08-05 11:50:26.593  INFO 20500 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-05 11:50:26.593  INFO 20500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-05 11:50:26.605  INFO 20500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2021-08-05 11:57:03.473  INFO 20500 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 11:57:03.473  INFO 20500 --- [RMI TCP Connection(15)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 11:50:10 IST 2021]; root of context hierarchy
+2021-08-05 11:57:03.475  INFO 20500 --- [RMI TCP Connection(15)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 11:57:03.475  INFO 20500 --- [RMI TCP Connection(15)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 11:57:03.476  INFO 20500 --- [RMI TCP Connection(15)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 11:57:03.476  INFO 20500 --- [RMI TCP Connection(15)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 11:57:12.305  INFO 28400 --- [main] c.e.SpringRabbitMQProducerApplication    : Starting SpringRabbitMQProducerApplication on EVOKE-CVD-16 with PID 28400 (C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ\target\classes started by ypasha in C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ)
+2021-08-05 11:57:12.307  INFO 28400 --- [main] c.e.SpringRabbitMQProducerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 11:57:12.341  INFO 28400 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 11:57:12 IST 2021]; root of context hierarchy
+2021-08-05 11:57:13.062  INFO 28400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$5bcd93f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 11:57:13.254  INFO 28400 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-05 11:57:13.262  INFO 28400 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 11:57:13.262  INFO 28400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 11:57:13.324  INFO 28400 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-05 11:57:13.324  INFO 28400 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 987 ms
+2021-08-05 11:57:13.434  INFO 28400 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 11:57:13.437  INFO 28400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 11:57:13.437  INFO 28400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 11:57:13.437  INFO 28400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 11:57:13.437  INFO 28400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 11:57:13.795  INFO 28400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitmq/send],methods=[GET]}" onto public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 11:57:13.797  INFO 28400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-08-05 11:57:13.798  INFO 28400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-08-05 11:57:13.798  INFO 28400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-08-05 11:57:13.800  INFO 28400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 11:57:13.800  INFO 28400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 11:57:13.877  INFO 28400 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-05 11:57:13.932  INFO 28400 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 11:57:12 IST 2021]; root of context hierarchy
+2021-08-05 11:57:13.973  INFO 28400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:57:13.973  INFO 28400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:57:14.003  INFO 28400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:57:14.136  INFO 28400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 11:57:14.142  INFO 28400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 11:57:14.144  INFO 28400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 11:57:14.155  INFO 28400 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 11:57:14.156  INFO 28400 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 11:57:14.156  INFO 28400 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-05 11:57:14.170  INFO 28400 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-05 11:57:14.192  INFO 28400 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-05 11:57:14.309  INFO 28400 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-05 11:57:14.313  INFO 28400 --- [main] c.e.SpringRabbitMQProducerApplication    : Started SpringRabbitMQProducerApplication in 2.182 seconds (JVM running for 2.682)
+2021-08-05 11:57:25.740  INFO 28400 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-05 11:57:25.740  INFO 28400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-05 11:57:25.753  INFO 28400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2021-08-05 11:59:04.170  INFO 28400 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 11:59:04.171  INFO 28400 --- [RMI TCP Connection(11)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 11:57:12 IST 2021]; root of context hierarchy
+2021-08-05 11:59:04.172  INFO 28400 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 11:59:04.173  INFO 28400 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 11:59:04.174  INFO 28400 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 11:59:04.174  INFO 28400 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 11:59:15.821  INFO 13244 --- [main] c.e.SpringRabbitMQProducerApplication    : Starting SpringRabbitMQProducerApplication on EVOKE-CVD-16 with PID 13244 (C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ\target\classes started by ypasha in C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ)
+2021-08-05 11:59:15.823  INFO 13244 --- [main] c.e.SpringRabbitMQProducerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 11:59:15.858  INFO 13244 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 11:59:15 IST 2021]; root of context hierarchy
+2021-08-05 11:59:16.534  INFO 13244 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$cc46ed46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 11:59:16.705  INFO 13244 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-05 11:59:16.713  INFO 13244 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 11:59:16.713  INFO 13244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 11:59:16.775  INFO 13244 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 11:59:16.776  INFO 13244 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 923 ms
+2021-08-05 11:59:16.882  INFO 13244 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 11:59:16.886  INFO 13244 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 11:59:16.886  INFO 13244 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 11:59:16.887  INFO 13244 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 11:59:16.887  INFO 13244 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 11:59:17.265  INFO 13244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitmq/send],methods=[GET]}" onto public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 11:59:17.268  INFO 13244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-08-05 11:59:17.268  INFO 13244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-08-05 11:59:17.268  INFO 13244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-08-05 11:59:17.270  INFO 13244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 11:59:17.270  INFO 13244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 11:59:17.348  INFO 13244 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-05 11:59:17.396  INFO 13244 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 11:59:15 IST 2021]; root of context hierarchy
+2021-08-05 11:59:17.431  INFO 13244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:59:17.431  INFO 13244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:59:17.454  INFO 13244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:59:17.577  INFO 13244 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 11:59:17.581  INFO 13244 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 11:59:17.583  INFO 13244 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 11:59:17.594  INFO 13244 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 11:59:17.594  INFO 13244 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 11:59:17.594  INFO 13244 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-05 11:59:17.606  INFO 13244 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-05 11:59:17.629  INFO 13244 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-05 11:59:17.728  INFO 13244 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-05 11:59:17.733  INFO 13244 --- [main] c.e.SpringRabbitMQProducerApplication    : Started SpringRabbitMQProducerApplication in 2.088 seconds (JVM running for 2.596)
+2021-08-05 11:59:25.818  INFO 13244 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-05 11:59:25.820  INFO 13244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-05 11:59:25.833  INFO 13244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2021-08-05 12:00:05.485  WARN 13244 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 12:02:35.998  WARN 13244 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 12:04:28.553  INFO 13244 --- [http-nio-8080-exec-7] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@67db5e9d [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 59557]
+2021-08-05 12:04:29.847  INFO 13244 --- [http-nio-8080-exec-7] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp5, empId=105]
+2021-08-05 12:04:44.576  INFO 13244 --- [http-nio-8080-exec-3] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp5, empId=105]
+2021-08-05 12:08:26.316  WARN 13244 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 12:08:41.720  INFO 13244 --- [http-nio-8080-exec-2] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp5, empId=105]
+2021-08-05 12:13:07.576  INFO 13244 --- [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 12:13:07.577  INFO 13244 --- [RMI TCP Connection(23)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 11:59:15 IST 2021]; root of context hierarchy
+2021-08-05 12:13:07.579  INFO 13244 --- [RMI TCP Connection(23)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 12:13:07.579  INFO 13244 --- [RMI TCP Connection(23)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 12:13:07.580  INFO 13244 --- [RMI TCP Connection(23)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 12:13:07.580  INFO 13244 --- [RMI TCP Connection(23)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 12:13:23.437  INFO 27544 --- [main] c.e.SpringRabbitMQProducerApplication    : Starting SpringRabbitMQProducerApplication on EVOKE-CVD-16 with PID 27544 (C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ\target\classes started by ypasha in C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ)
+2021-08-05 12:13:23.439  INFO 27544 --- [main] c.e.SpringRabbitMQProducerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 12:13:23.476  INFO 27544 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 12:13:23 IST 2021]; root of context hierarchy
+2021-08-05 12:13:24.143  INFO 27544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$5bcd93f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 12:13:24.309  INFO 27544 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-05 12:13:24.317  INFO 27544 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 12:13:24.317  INFO 27544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 12:13:24.378  INFO 27544 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 12:13:24.379  INFO 27544 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 909 ms
+2021-08-05 12:13:24.487  INFO 27544 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 12:13:24.489  INFO 27544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 12:13:24.490  INFO 27544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 12:13:24.490  INFO 27544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 12:13:24.490  INFO 27544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 12:13:24.849  INFO 27544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitmq/send],methods=[GET]}" onto public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 12:13:24.851  INFO 27544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-08-05 12:13:24.852  INFO 27544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-08-05 12:13:24.852  INFO 27544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-08-05 12:13:24.854  INFO 27544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 12:13:24.854  INFO 27544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 12:13:24.923  INFO 27544 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-05 12:13:24.987  INFO 27544 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 12:13:23 IST 2021]; root of context hierarchy
+2021-08-05 12:13:25.028  INFO 27544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:13:25.028  INFO 27544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:13:25.057  INFO 27544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:13:25.184  INFO 27544 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 12:13:25.189  INFO 27544 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 12:13:25.190  INFO 27544 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 12:13:25.202  INFO 27544 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 12:13:25.203  INFO 27544 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 12:13:25.203  INFO 27544 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-05 12:13:25.215  INFO 27544 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-05 12:13:25.236  INFO 27544 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-05 12:13:25.335  INFO 27544 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-05 12:13:25.338  INFO 27544 --- [main] c.e.SpringRabbitMQProducerApplication    : Started SpringRabbitMQProducerApplication in 2.075 seconds (JVM running for 2.575)
+2021-08-05 12:13:42.566  INFO 27544 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-05 12:13:42.566  INFO 27544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-05 12:13:42.578  INFO 27544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2021-08-05 12:14:12.454  WARN 27544 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 12:16:10.877  INFO 27544 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 12:16:10.877  INFO 27544 --- [RMI TCP Connection(10)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 12:13:23 IST 2021]; root of context hierarchy
+2021-08-05 12:16:10.879  INFO 27544 --- [RMI TCP Connection(10)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 12:16:10.879  INFO 27544 --- [RMI TCP Connection(10)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 12:16:10.880  INFO 27544 --- [RMI TCP Connection(10)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 12:16:10.880  INFO 27544 --- [RMI TCP Connection(10)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 12:16:31.811  INFO 25688 --- [main] c.e.SpringRabbitMQProducerApplication    : Starting SpringRabbitMQProducerApplication on EVOKE-CVD-16 with PID 25688 (C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ\target\classes started by ypasha in C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ)
+2021-08-05 12:16:31.813  INFO 25688 --- [main] c.e.SpringRabbitMQProducerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 12:16:31.849  INFO 25688 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 12:16:31 IST 2021]; root of context hierarchy
+2021-08-05 12:16:32.536  INFO 25688 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$5b02972f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 12:16:32.704  INFO 25688 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-05 12:16:32.712  INFO 25688 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 12:16:32.713  INFO 25688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 12:16:32.771  INFO 25688 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 12:16:32.771  INFO 25688 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 927 ms
+2021-08-05 12:16:32.880  INFO 25688 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 12:16:32.883  INFO 25688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 12:16:32.883  INFO 25688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 12:16:32.883  INFO 25688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 12:16:32.883  INFO 25688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 12:16:33.245  INFO 25688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitmq/send],methods=[POST]}" onto public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 12:16:33.248  INFO 25688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-08-05 12:16:33.249  INFO 25688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-08-05 12:16:33.250  INFO 25688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-08-05 12:16:33.251  INFO 25688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 12:16:33.251  INFO 25688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 12:16:33.329  INFO 25688 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-05 12:16:33.374  INFO 25688 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 12:16:31 IST 2021]; root of context hierarchy
+2021-08-05 12:16:33.409  INFO 25688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:16:33.409  INFO 25688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:16:33.435  INFO 25688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:16:33.557  INFO 25688 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 12:16:33.562  INFO 25688 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 12:16:33.564  INFO 25688 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 12:16:33.575  INFO 25688 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 12:16:33.575  INFO 25688 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 12:16:33.575  INFO 25688 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-05 12:16:33.588  INFO 25688 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-05 12:16:33.608  INFO 25688 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-05 12:16:33.711  INFO 25688 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-05 12:16:33.715  INFO 25688 --- [main] c.e.SpringRabbitMQProducerApplication    : Started SpringRabbitMQProducerApplication in 2.075 seconds (JVM running for 2.573)
+2021-08-05 12:16:44.410  INFO 25688 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-05 12:16:44.410  INFO 25688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-05 12:16:44.421  INFO 25688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2021-08-05 12:17:06.970  INFO 25688 --- [http-nio-8080-exec-7] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@432791a6 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 58989]
+2021-08-05 12:17:07.390  INFO 25688 --- [http-nio-8080-exec-7] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp100, empId=100]
+2021-08-05 12:20:36.528  INFO 25688 --- [http-nio-8080-exec-10] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp100, empId=100]
+2021-08-05 12:24:22.088  INFO 25688 --- [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 12:24:22.089  INFO 25688 --- [RMI TCP Connection(18)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 12:16:31 IST 2021]; root of context hierarchy
+2021-08-05 12:24:22.090  INFO 25688 --- [RMI TCP Connection(18)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 12:24:22.091  INFO 25688 --- [RMI TCP Connection(18)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 12:24:22.091  INFO 25688 --- [RMI TCP Connection(18)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 12:24:22.092  INFO 25688 --- [RMI TCP Connection(18)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 12:51:08.782  INFO 9572 --- [main] c.e.SpringRabbitMQProducerApplication    : Starting SpringRabbitMQProducerApplication on EVOKE-CVD-16 with PID 9572 (C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ\target\classes started by ypasha in C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ)
+2021-08-05 12:51:08.784  INFO 9572 --- [main] c.e.SpringRabbitMQProducerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 12:51:08.818  INFO 9572 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 12:51:08 IST 2021]; root of context hierarchy
+2021-08-05 12:51:09.508  INFO 9572 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$5bcd93f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 12:51:09.677  INFO 9572 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-05 12:51:09.686  INFO 9572 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 12:51:09.687  INFO 9572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 12:51:09.745  INFO 9572 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 12:51:09.745  INFO 9572 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 932 ms
+2021-08-05 12:51:09.853  INFO 9572 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 12:51:09.856  INFO 9572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 12:51:09.856  INFO 9572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 12:51:09.856  INFO 9572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 12:51:09.856  INFO 9572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 12:51:10.218  INFO 9572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitmq/send],methods=[POST]}" onto public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 12:51:10.219  INFO 9572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-08-05 12:51:10.220  INFO 9572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-08-05 12:51:10.221  INFO 9572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-08-05 12:51:10.222  INFO 9572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 12:51:10.223  INFO 9572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 12:51:10.315  INFO 9572 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-05 12:51:10.370  INFO 9572 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 12:51:08 IST 2021]; root of context hierarchy
+2021-08-05 12:51:10.407  INFO 9572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:51:10.407  INFO 9572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:51:10.433  INFO 9572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:51:10.553  INFO 9572 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 12:51:10.558  INFO 9572 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 12:51:10.559  INFO 9572 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 12:51:10.569  INFO 9572 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 12:51:10.570  INFO 9572 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 12:51:10.570  INFO 9572 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-05 12:51:10.583  INFO 9572 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-05 12:51:10.603  INFO 9572 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-05 12:51:10.701  INFO 9572 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-05 12:51:10.705  INFO 9572 --- [main] c.e.SpringRabbitMQProducerApplication    : Started SpringRabbitMQProducerApplication in 2.096 seconds (JVM running for 2.597)
+2021-08-05 12:51:41.197  INFO 9572 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-05 12:51:41.198  INFO 9572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-05 12:51:41.209  INFO 9572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2021-08-05 12:51:41.799  INFO 9572 --- [http-nio-8080-exec-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@1668455d [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 52102]
+2021-08-05 12:51:42.247  INFO 9572 --- [http-nio-8080-exec-1] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp100, empId=100]
+2021-08-05 13:08:10.195  INFO 9572 --- [http-nio-8080-exec-3] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp100, empId=100]
+2021-08-05 13:09:41.989  INFO 9572 --- [http-nio-8080-exec-5] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp100, empId=100]
+2021-08-05 14:02:15.785  WARN 9572 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-05 14:02:15.788 ERROR 9572 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 16:51:09.663  INFO 9572 --- [RMI TCP Connection(230)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 16:51:09.664  INFO 9572 --- [RMI TCP Connection(230)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 12:51:08 IST 2021]; root of context hierarchy
+2021-08-05 16:51:09.666  INFO 9572 --- [RMI TCP Connection(230)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 16:51:09.667  INFO 9572 --- [RMI TCP Connection(230)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 16:51:09.668  INFO 9572 --- [RMI TCP Connection(230)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 16:51:09.668  INFO 9572 --- [RMI TCP Connection(230)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 16:51:40.139  INFO 29028 --- [main] c.e.SpringRabbitMQProducerApplication    : Starting SpringRabbitMQProducerApplication on EVOKE-CVD-16 with PID 29028 (C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ\target\classes started by ypasha in C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ)
+2021-08-05 16:51:40.141  INFO 29028 --- [main] c.e.SpringRabbitMQProducerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 16:51:40.177  INFO 29028 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 16:51:40 IST 2021]; root of context hierarchy
+2021-08-05 16:51:40.859  INFO 29028 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$f8093376] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 16:51:41.026  INFO 29028 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-05 16:51:41.033  INFO 29028 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 16:51:41.034  INFO 29028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 16:51:41.098  INFO 29028 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 16:51:41.098  INFO 29028 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 926 ms
+2021-08-05 16:51:41.209  INFO 29028 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 16:51:41.212  INFO 29028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 16:51:41.212  INFO 29028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 16:51:41.212  INFO 29028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 16:51:41.212  INFO 29028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 16:51:41.649  INFO 29028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitmq/send],methods=[POST]}" onto public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 16:51:41.652  INFO 29028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-08-05 16:51:41.652  INFO 29028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-08-05 16:51:41.653  INFO 29028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-08-05 16:51:41.654  INFO 29028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 16:51:41.655  INFO 29028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 16:51:41.734  INFO 29028 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-05 16:51:41.792  INFO 29028 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 16:51:40 IST 2021]; root of context hierarchy
+2021-08-05 16:51:41.827  INFO 29028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 16:51:41.828  INFO 29028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 16:51:41.853  INFO 29028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 16:51:41.982  INFO 29028 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 16:51:41.987  INFO 29028 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 16:51:41.989  INFO 29028 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 16:51:41.999  INFO 29028 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 16:51:41.999  INFO 29028 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 16:51:42.000  INFO 29028 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-05 16:51:42.012  INFO 29028 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-05 16:51:42.033  INFO 29028 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-05 16:51:42.132  INFO 29028 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-05 16:51:42.135  INFO 29028 --- [main] c.e.SpringRabbitMQProducerApplication    : Started SpringRabbitMQProducerApplication in 2.166 seconds (JVM running for 2.685)
+2021-08-05 16:51:58.715  INFO 29028 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-05 16:51:58.715  INFO 29028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-05 16:51:58.727  INFO 29028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2021-08-05 16:52:32.942  INFO 29028 --- [http-nio-8080-exec-7] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@a142369 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 57627]
+2021-08-05 16:52:33.317 ERROR 29028 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'x-dead-letter-exchange' for queue '2154-queue1' in vhost '/': received the value 'deadLetterExchange' of type 'longstr' but current is none, class-id=50, method-id=10)
+2021-08-05 16:52:33.424 ERROR 29028 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/producer-api] threw exception [Request processing failed; nested exception is org.springframework.amqp.AmqpIOException: java.io.IOException] with root cause
+
+com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'x-dead-letter-exchange' for queue '2154-queue1' in vhost '/': received the value 'deadLetterExchange' of type 'longstr' but current is none, class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:505) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:336) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:143) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:90) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:634) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:572) ~[amqp-client-4.0.2.jar:4.0.2]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-08-05 16:53:06.051  INFO 29028 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 16:53:06.051  INFO 29028 --- [RMI TCP Connection(11)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 16:51:40 IST 2021]; root of context hierarchy
+2021-08-05 16:53:06.053  INFO 29028 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 16:53:06.054  INFO 29028 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 16:53:06.054  INFO 29028 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 16:53:06.054  INFO 29028 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 16:53:25.474  INFO 21024 --- [main] c.e.SpringRabbitMQProducerApplication    : Starting SpringRabbitMQProducerApplication on EVOKE-CVD-16 with PID 21024 (C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ\target\classes started by ypasha in C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ)
+2021-08-05 16:53:25.476  INFO 21024 --- [main] c.e.SpringRabbitMQProducerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 16:53:25.509  INFO 21024 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 16:53:25 IST 2021]; root of context hierarchy
+2021-08-05 16:53:26.169  INFO 21024 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e4916d1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 16:53:26.342  INFO 21024 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-05 16:53:26.350  INFO 21024 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 16:53:26.351  INFO 21024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 16:53:26.411  INFO 21024 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 16:53:26.412  INFO 21024 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 908 ms
+2021-08-05 16:53:26.521  INFO 21024 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 16:53:26.524  INFO 21024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 16:53:26.524  INFO 21024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 16:53:26.524  INFO 21024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 16:53:26.525  INFO 21024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 16:53:26.885  INFO 21024 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitmq/send],methods=[POST]}" onto public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 16:53:26.888  INFO 21024 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-08-05 16:53:26.889  INFO 21024 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-08-05 16:53:26.889  INFO 21024 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-08-05 16:53:26.891  INFO 21024 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 16:53:26.891  INFO 21024 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 16:53:26.961  INFO 21024 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-05 16:53:27.014  INFO 21024 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 16:53:25 IST 2021]; root of context hierarchy
+2021-08-05 16:53:27.049  INFO 21024 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 16:53:27.049  INFO 21024 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 16:53:27.073  INFO 21024 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 16:53:27.188  INFO 21024 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 16:53:27.193  INFO 21024 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 16:53:27.195  INFO 21024 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 16:53:27.211  INFO 21024 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 16:53:27.211  INFO 21024 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 16:53:27.211  INFO 21024 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-05 16:53:27.223  INFO 21024 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-05 16:53:27.243  INFO 21024 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-05 16:53:27.344  INFO 21024 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-05 16:53:27.348  INFO 21024 --- [main] c.e.SpringRabbitMQProducerApplication    : Started SpringRabbitMQProducerApplication in 2.048 seconds (JVM running for 2.546)
+2021-08-05 16:55:06.939  INFO 21024 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-05 16:55:06.939  INFO 21024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-05 16:55:06.955  INFO 21024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2021-08-05 16:55:07.413  INFO 21024 --- [http-nio-8080-exec-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@1668455d [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 65379]
+2021-08-05 16:55:07.755 ERROR 21024 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'x-dead-letter-exchange' for queue '2154-queue1' in vhost '/': received the value 'deadLetterExchange' of type 'longstr' but current is none, class-id=50, method-id=10)
+2021-08-05 16:55:07.841 ERROR 21024 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/producer-api] threw exception [Request processing failed; nested exception is org.springframework.amqp.AmqpIOException: java.io.IOException] with root cause
+
+com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'x-dead-letter-exchange' for queue '2154-queue1' in vhost '/': received the value 'deadLetterExchange' of type 'longstr' but current is none, class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:505) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:336) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:143) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:90) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:634) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:572) ~[amqp-client-4.0.2.jar:4.0.2]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-08-05 16:58:00.748  INFO 21024 --- [http-nio-8080-exec-2] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp1001, empId=100]
+2021-08-05 17:01:05.771  INFO 21024 --- [http-nio-8080-exec-4] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp1002, empId=101]
+2021-08-05 17:01:05.859 ERROR 21024 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange '2154-exchange' in vhost '/', class-id=60, method-id=40)
+2021-08-05 17:06:48.853  INFO 21024 --- [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 17:06:48.853  INFO 21024 --- [RMI TCP Connection(23)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 16:53:25 IST 2021]; root of context hierarchy
+2021-08-05 17:06:48.855  INFO 21024 --- [RMI TCP Connection(23)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 17:06:48.856  INFO 21024 --- [RMI TCP Connection(23)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 17:06:48.856  INFO 21024 --- [RMI TCP Connection(23)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 17:06:48.856  INFO 21024 --- [RMI TCP Connection(23)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 17:06:59.988  INFO 20984 --- [main] c.e.SpringRabbitMQProducerApplication    : Starting SpringRabbitMQProducerApplication on EVOKE-CVD-16 with PID 20984 (C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ\target\classes started by ypasha in C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ)
+2021-08-05 17:06:59.990  INFO 20984 --- [main] c.e.SpringRabbitMQProducerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 17:07:00.037  INFO 20984 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 17:07:00 IST 2021]; root of context hierarchy
+2021-08-05 17:07:00.736  INFO 20984 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$9608fd18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 17:07:00.903  INFO 20984 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-05 17:07:00.912  INFO 20984 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 17:07:00.913  INFO 20984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 17:07:00.974  INFO 20984 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 17:07:00.974  INFO 20984 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 943 ms
+2021-08-05 17:07:01.082  INFO 20984 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 17:07:01.084  INFO 20984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 17:07:01.085  INFO 20984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 17:07:01.085  INFO 20984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 17:07:01.085  INFO 20984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 17:07:01.441  INFO 20984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitmq/send],methods=[POST]}" onto public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-05 17:07:01.444  INFO 20984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-08-05 17:07:01.445  INFO 20984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-08-05 17:07:01.445  INFO 20984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-08-05 17:07:01.447  INFO 20984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 17:07:01.447  INFO 20984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 17:07:01.514  INFO 20984 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-05 17:07:01.573  INFO 20984 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 17:07:00 IST 2021]; root of context hierarchy
+2021-08-05 17:07:01.607  INFO 20984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 17:07:01.607  INFO 20984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 17:07:01.631  INFO 20984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 17:07:01.754  INFO 20984 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 17:07:01.759  INFO 20984 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 17:07:01.761  INFO 20984 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 17:07:01.776  INFO 20984 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 17:07:01.776  INFO 20984 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 17:07:01.776  INFO 20984 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-05 17:07:01.790  INFO 20984 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-05 17:07:01.811  INFO 20984 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-05 17:07:01.914  INFO 20984 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-05 17:07:01.918  INFO 20984 --- [main] c.e.SpringRabbitMQProducerApplication    : Started SpringRabbitMQProducerApplication in 2.103 seconds (JVM running for 2.604)
+2021-08-05 17:07:19.673  INFO 20984 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-05 17:07:19.673  INFO 20984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-05 17:07:19.685  INFO 20984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2021-08-05 17:07:43.746  INFO 20984 --- [http-nio-8080-exec-7] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@a142369 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 52684]
+2021-08-05 17:07:44.421  INFO 20984 --- [http-nio-8080-exec-7] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp1234, empId=100]
+2021-08-05 17:13:32.924  WARN 20984 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-05 17:13:32.926 ERROR 20984 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 17:14:49.563  INFO 20984 --- [http-nio-8080-exec-10] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@6d369d6f [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 55289]
+2021-08-05 17:14:51.310  INFO 20984 --- [http-nio-8080-exec-10] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp1234, empId=100]
+2021-08-05 19:11:27.433  WARN 20984 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-05 19:11:27.435 ERROR 20984 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 19:11:27.436 ERROR 20984 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 20:50:36.290  INFO 20984 --- [RMI TCP Connection(160)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 20:50:36.291  INFO 20984 --- [RMI TCP Connection(160)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b40f651: startup date [Thu Aug 05 17:07:00 IST 2021]; root of context hierarchy
+2021-08-05 20:50:36.293  INFO 20984 --- [RMI TCP Connection(160)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 20:50:36.295  INFO 20984 --- [RMI TCP Connection(160)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 20:50:36.296  INFO 20984 --- [RMI TCP Connection(160)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 20:50:36.296  INFO 20984 --- [RMI TCP Connection(160)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-06 12:54:43.309  INFO 6060 --- [main] c.e.SpringRabbitMQProducerApplication    : Starting SpringRabbitMQProducerApplication on EVOKE-CVD-16 with PID 6060 (C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ\target\classes started by ypasha in C:\Users\ypasha\EvokePractice\SpringBootRabbitMQ)
+2021-08-06 12:54:43.311  INFO 6060 --- [main] c.e.SpringRabbitMQProducerApplication    : No active profile set, falling back to default profiles: default
+2021-08-06 12:54:43.351  INFO 6060 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49964d75: startup date [Fri Aug 06 12:54:43 IST 2021]; root of context hierarchy
+2021-08-06 12:54:44.280  INFO 6060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$fa9964e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-06 12:54:44.538  INFO 6060 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-06 12:54:44.546  INFO 6060 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-06 12:54:44.547  INFO 6060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-06 12:54:44.642  INFO 6060 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-06 12:54:44.642  INFO 6060 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1300 ms
+2021-08-06 12:54:44.790  INFO 6060 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-06 12:54:44.793  INFO 6060 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-06 12:54:44.794  INFO 6060 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-06 12:54:44.794  INFO 6060 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-06 12:54:44.794  INFO 6060 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-06 12:54:45.248  INFO 6060 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitmq/send],methods=[POST]}" onto public java.lang.String com.evoke.controller.RabbitMQController.producer(com.evoke.model.Employee)
+2021-08-06 12:54:45.251  INFO 6060 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-08-06 12:54:45.252  INFO 6060 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-08-06 12:54:45.252  INFO 6060 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-08-06 12:54:45.254  INFO 6060 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-06 12:54:45.255  INFO 6060 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-06 12:54:45.341  INFO 6060 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-06 12:54:45.395  INFO 6060 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49964d75: startup date [Fri Aug 06 12:54:43 IST 2021]; root of context hierarchy
+2021-08-06 12:54:45.434  INFO 6060 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-06 12:54:45.435  INFO 6060 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-06 12:54:45.464  INFO 6060 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-06 12:54:45.605  INFO 6060 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-06 12:54:45.612  INFO 6060 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-06 12:54:45.614  INFO 6060 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-06 12:54:45.626  INFO 6060 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-06 12:54:45.627  INFO 6060 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-06 12:54:45.628  INFO 6060 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-06 12:54:45.641  INFO 6060 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-06 12:54:45.665  INFO 6060 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-06 12:54:45.783  INFO 6060 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-06 12:54:45.789  INFO 6060 --- [main] c.e.SpringRabbitMQProducerApplication    : Started SpringRabbitMQProducerApplication in 2.673 seconds (JVM running for 3.43)
+2021-08-06 12:55:15.000  INFO 6060 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/producer-api]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-06 12:55:15.000  INFO 6060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-06 12:55:15.027  INFO 6060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2021-08-06 12:55:38.245  INFO 6060 --- [http-nio-8080-exec-5] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@41b8f4b5 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 61780]
+2021-08-06 12:55:38.894  INFO 6060 --- [http-nio-8080-exec-5] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp100, empId=100]
+2021-08-06 13:13:43.038  INFO 6060 --- [http-nio-8080-exec-8] com.evoke.service.RabbitMQSender         : Message Sent = Employee [empName=emp1001, empId=100]
+2021-08-06 14:40:44.775  WARN 6060 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-06 14:40:44.780 ERROR 6060 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-06 18:41:42.536  INFO 6060 --- [RMI TCP Connection(220)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-06 18:41:42.537  INFO 6060 --- [RMI TCP Connection(220)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49964d75: startup date [Fri Aug 06 12:54:43 IST 2021]; root of context hierarchy
+2021-08-06 18:41:42.541  INFO 6060 --- [RMI TCP Connection(220)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-06 18:41:42.542  INFO 6060 --- [RMI TCP Connection(220)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-06 18:41:42.543  INFO 6060 --- [RMI TCP Connection(220)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-06 18:41:42.543  INFO 6060 --- [RMI TCP Connection(220)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
